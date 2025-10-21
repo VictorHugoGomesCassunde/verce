@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.contador p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.contador span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.mensagem {
+  font-size: 1.4rem;
+  color: #ffcc00;
+  animation: pulse 1.5s infinite;
+}
+
+.texto {
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+.imagem {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.2rem; }
+  .contador p { font-size: 1.5rem; }
+}
